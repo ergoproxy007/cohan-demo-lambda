@@ -1,0 +1,46 @@
+# ======================================
+# ? Application Configuration - Spring Boot 3.5
+# ======================================
+spring:
+  application:
+    name: cohan-demo-lambda
+
+  datasource:
+    url: jdbc:postgresql://database-cohab.cnciw0u60cxr.us-east-2.rds.amazonaws.com:5432/crud_person
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # create | update | validate | none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  # Puedes activar perfiles específicos (dev, test, prod)
+  profiles:
+    active: dev
+
+# ======================================
+# ? Server Configuration
+# ======================================
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+# ======================================
+# ? Custom Properties (puedes usar en @Value)
+# ======================================
+app:
+  feature-flags:
+    enable-feature-x: true
+  external-api:
+    base-url: https://api.example.com
+    timeout: 5s
