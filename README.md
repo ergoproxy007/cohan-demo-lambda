@@ -2,26 +2,27 @@
 * Demo Cohan - Prueba Técnica Desarrollador de Software
 
 ## Descripción Cambio
-* La Prima de Servicios es una prestación social que existe en Colombia y algunos países de latinoamérica. En el caso Colombiano, equivale a 30 días de salario por cada año trabajado, que el empleador debe pagar a sus trabajadores en 2 cuotas semestrales:
-* La primera en el mes de Junio.
-* La segunda en el mes de Diciembre.
-En el siguiente [Documento](https://docs.google.com/document/d/12fiT9fERlCFEsJBnuv19cvETwrXEca2wK8LtLfxcPqg/edit?tab=t.0) puede tener mas detalle de la Epica. 
+Se requiere implementar una Aplicación WEB Frontend y Backend que implemente un CRUD para la entidad Person en el siguiente diagrama UML:
+<img width="889" height="477" alt="image" src="https://github.com/user-attachments/assets/e413a14a-94f0-4bde-8fd8-cbfc24946618" />
 
 ## Objetivos y Requisitos
-•	No es necesario implementar los métodos descritos en el diagrama.
-•	El CRUD se debe realizar sobre la entidad Person.
-•	El CRUD debe quedar expuesto como servicio web SOAP, REST o ambos.
-•	Preferiblemente implementar la solución en JAVA.
-•	Preferiblemente usar Hibernate o JPA como ORM.
-•	Se puede usar cualquier framework en el back end.
-•	Se puede usar cualquier motor de base de datos relacional para la persistencia.
-•	Se puede usar cualquier librería para la visualización en HTML.
-•	Se puede usar cualquier servidor de aplicaciones.
+* No es necesario implementar los métodos descritos en el diagrama.
+* El CRUD se debe realizar sobre la entidad Person.
+* El CRUD debe quedar expuesto como servicio web SOAP, REST o ambos.
+* Preferiblemente implementar la solución en JAVA.
+* Preferiblemente usar Hibernate o JPA como ORM.
+* Se puede usar cualquier framework en el back end.
+* Se puede usar cualquier motor de base de datos relacional para la persistencia.
+* Se puede usar cualquier librería para la visualización en HTML.
+* Se puede usar cualquier servidor de aplicaciones.
 
 ## Documentación Técnica
 * Amazon RDS -> PostgreSQL RDBMS
 
-###### Modelo de Datos Actual:
+### Deploy
+* Maven Packaging Application > { excetute command } ->  `mvn clean package`
+
+### Modelo de Datos Actual:
 
 ###### Actualización Modelo de Datos Propuesto:
 [PENDIENTE]
@@ -31,10 +32,7 @@ En el siguiente [Documento](https://docs.google.com/document/d/12fiT9fERlCFEsJBn
 ## Pruebas
 [PENDIENTE]
 
-## Monitoreo, KPIs, Evidencias
-[PENDIENTE]
-
-## Monitoreo, KPIs, Evidencias
+### Monitoreo, KPIs, Evidencias
 [PENDIENTE]
 
 ## Estrategia de Despliegue
@@ -44,4 +42,10 @@ En el siguiente [Documento](https://docs.google.com/document/d/12fiT9fERlCFEsJBn
 * Despliegue Canary al 30% durante 30 minutos para monitorear que todo vaya bien.
 * Despliegue Blue Green para asentar la nueva versión. 
 
-###### Plantilla Docs Designs: https://github.com/charliesbot/design-docs/tree/main/spanish#
+###### Plantillas: 
+```
+Docs Designs:
+https://github.com/charliesbot/design-docs/tree/main/spanish#
+formatting-syntax:
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+```
