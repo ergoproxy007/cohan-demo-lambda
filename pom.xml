@@ -13,23 +13,39 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cohan-demo-lambda</name>
 	<description>Demo for Spring Boot with AWS Lambda Functions Serveless</description>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
-	<properties>
-		<java.version>17</java.version>
-		<spring-cloud.version>2025.0.0</spring-cloud.version>
-	</properties>
+    <url/>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>dtorres</id>
+            <name>Daniel Torres</name>
+            <email>torresruizdaniel23@gmail.com</email>
+            <organization>Cohan Labs</organization>
+            <organizationUrl>https://www.cohan.org.co/</organizationUrl>
+            <roles>
+                <role>developer</role>
+                <role>maintainer</role>
+            </roles>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:https://github.com/ergoproxy007/cohan-demo-lambda.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/ergoproxy007/cohan-demo-lambda.git</developerConnection>
+        <tag>main</tag>
+        <url>https://github.com/ergoproxy007/cohan-demo-lambda</url>
+    </scm>
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <spring-cloud.version>2025.0.0</spring-cloud.version>
+    </properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
